@@ -1,13 +1,21 @@
 // We can't use arrow functions here because
 // they don't respect the `this` scope
 
+function setReference(item, name) {
+  if (!this.refs) {
+    this.refs = {}
+  }
+
+  this.refs[name] = item
+}
+
 module.exports = function(item, name) {
   if (!item) {
     return
   }
 
   if (name) {
-    this[name] = item
+    setReference(item, name)
     return
   }
 
@@ -21,5 +29,5 @@ module.exports = function(item, name) {
     return
   }
 
-  this[name] = item
+  setReference(item, name)
 }
