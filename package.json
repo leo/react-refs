@@ -1,6 +1,6 @@
 {
   "name": "react-refs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Easily set references to React elements",
   "main": "index.js",
   "repository": "leo/react-refs",
