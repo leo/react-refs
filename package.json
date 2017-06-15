@@ -1,0 +1,15 @@
+{
+  "name": "react-refs",
+  "version": "0.1.0",
+  "description": "Easily set references to React elements",
+  "main": "index.js",
+  "repository": "leo/react-refs",
+  "keywords": [
+    "react",
+    "ref",
+    "set",
+    "reference"
+  ],
+  "author": "leo",
+  "license": "MIT"
+}
