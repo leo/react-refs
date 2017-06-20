@@ -35,6 +35,20 @@ As the final step, you can create a reference in `render` (using the example cod
 <Example ref={this.setReference} name="example"/>
 ```
 
+### Increasing Performance
+
+The package is already binding in `constructor` to make re-rendering as fast as possible out of the box. But if you want to get the maximum out of performance, I suggest pre-filling each reference with `null` in `constructor` ([v8](https://developers.google.com/v8/) likes it a lot when you tell it as much as possible ahead of time):
+
+```js
+constructor(props) {
+  super(props)
+  this.setReference = setRef.bind(this)
+  
+  // Based on the "name" property of the <Example/> component above
+  this.example = null
+}
+```
+
 ## Caught a Bug?
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
