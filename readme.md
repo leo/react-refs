@@ -25,7 +25,7 @@ constructor(props) {
 }
 ```
 
-As the final step, you can create a reference in `render` (using the example below, your reference will live inside `this.example`):
+As the final step, you can create a reference in `render` (using the example code mentioned below, your reference will live inside the `this.example` property):
 
 ```jsx
 <Example ref={this.setReference} name="example"/>
