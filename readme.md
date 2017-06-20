@@ -4,6 +4,8 @@ Since [string references](https://facebook.github.io/react/docs/refs-and-the-dom
 
 To avoid this and bring back the convenience of string references (even at the cost of a few minor problems, as mentioned above), I've built this library.
 
+Using this project is perfectly fine. Because either way, you should ensure to use string references [as less as possible](https://facebook.github.io/react/docs/refs-and-the-dom.html#dont-overuse-refs). But when you do, you'll probably built a logic like [this one](https://github.com/leo/react-refs/blob/master/index.js) by yourself (I usually do that), so this packagage simply abstracts it.
+
 ## Usage
 
 Firstly, install the package using [npm](https://www.npmjs.com):
