@@ -2,6 +2,10 @@
 // they don't respect the `this` scope
 
 module.exports = function(item, name) {
+  if (!item) {
+    return
+  }
+
   if (name) {
     this[name] = item
     return
