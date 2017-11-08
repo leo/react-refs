@@ -1,5 +1,11 @@
 # react-refs
 
+---
+
+**DEPRECATED:** This is not a good idea in terms of performance. Bind in `constructor`... 😛
+
+---
+
 Since [string references](https://facebook.github.io/react/docs/refs-and-the-dom.html#legacy-api-string-refs) have been removed from [react](https://facebook.github.io/react/) for [multiple reasons](https://github.com/facebook/react/pull/8333#issuecomment-271648615), we as developers were forced to create a new function each time we set such a string reference for a [react](https://facebook.github.io/react/) element or component.
 
 To avoid this and bring back the convenience of string references (even at the cost of a few minor problems, as mentioned above), I've built this library.
